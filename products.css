@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163020;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+    background-color: #304D30;
+    color: white;
+    font-weight: initial;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #163020;
+}
+
+.language-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.language-button {
+    background-color: #304D30;
+    color: white;
+    font-weight: initial;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+    background-color: #163020;
+}
+
+.product-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.product-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.65);
+}
+
+.product-details {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.product-price {
+    color: #304D30;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    text-align: right;
+    
+}
+
+.product-description {
+    color: #304D30;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 550px;
+    margin-top: 0;
+}
+.product-name {
+    color: #304D30;
+    margin-bottom: -25px;
+}
+::selection {
+    background-color: rgb(217, 156, 66);
+    color: white;
+}
+@media (max-width: 768px) {
+    .header{
+        width: 115%;
+    }
+    .product-content {
+        flex-direction: column; /* Rearanjare pe coloană pentru ecrane mici */
+        align-items: center; /* Centrare elemente */
+    }
+    .product-image {
+        width: 100%; /* Imaginile să se întindă pe întreaga lățime disponibilă */
+        margin-bottom: 20px;
+        margin-right: -100px;
+    }
+    .product-details {
+        text-align: center; /* Aliniere centrală pentru detaliile produsului */
+    }
+    .product-name {
+        font-size: 40px;
+    }
+    .product-description {
+        font-size: 20px;
+    }
+    .product-name,
+    .product-price,
+    .product-description {
+        width: 100%; /* Lățimea completă disponibilă pentru text */
+        margin-bottom: 10px; /* Spațiere între elemente */
+        text-align: center;
+        margin-left: 43px;
+    }
+}
